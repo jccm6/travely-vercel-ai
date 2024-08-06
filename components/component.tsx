@@ -13,7 +13,7 @@ import { notificationSchema } from "../app/api/notifications/schema";
 import { experimental_useObject as useObject } from "ai/react";
 import { Activities } from "./activities";
 
-export function Component() {
+export function Travely() {
 	const gpt: any = useRef(null);
 	const home: any = useRef(null);
 
@@ -77,20 +77,20 @@ export function Component() {
 					<div className="px-4 md:px-6 space-y-10 xl:space-y-16">
 						<div className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
 							<div>
-								<h1 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
-									Unlock the World with Our Travel Advice
+								<h1 className="mb-3 lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
+									Descubra el mundo con nuestros planes de viaje
 								</h1>
 								<p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-									Discover the best destinations, plan your dream trip, and get
-									expert tips to make the most of your travels.
+									Planifica el viaje de tus sueños y obtén consejos para
+									aprovechar al máximo tus viajes.
 								</p>
 								<div className="mt-6 space-x-4">
 									<Link
-										href="#"
+										href="#AI"
 										className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
 										prefetch={false}
 									>
-										Get Travel Advice
+										¡Comenzar!
 									</Link>
 								</div>
 							</div>
@@ -110,12 +110,12 @@ export function Component() {
 							<div className="flex flex-col items-center justify-center text-center space-y-4">
 								<div className="space-y-2">
 									<h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-										Get Personalized Travel Advice
+										Reciba consejos de viaje de nuestra IA
 									</h2>
 									<p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-										Fill out the form below and our travel experts will provide
-										you with personalized recommendations and tips to make your
-										next trip unforgettable.
+										Llene el siguiente formulario y nuestra AI en viajes le
+										brindarán recomendaciones y consejos personalizados para que
+										su próximo viaje sea inolvidable.
 									</p>
 								</div>
 							</div>
@@ -178,7 +178,7 @@ export function Component() {
 									/>
 								</div>
 								<Button type="submit" className="w-full">
-									Get Travel Advice
+									Obtener Consejos e Itinerario
 								</Button>
 								{isLoading && (
 									<div>
@@ -187,7 +187,7 @@ export function Component() {
 											className="w-full"
 											onClick={() => stop()}
 										>
-											Stop
+											Detener
 										</Button>
 										<div>Generando...</div>
 									</div>
@@ -208,129 +208,59 @@ export function Component() {
 					<div className="grid items-center justify-center gap-4 px-4 text-center md:px-6">
 						<div className="space-y-3">
 							<h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-								Get Travel Advice from our AI
+								Nuestras Caracteristicas
 							</h2>
-							<p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-								Our AI-powered travel advice platform provides personalized
-								recommendations and tips to help you plan your dream trip.
+							<p className="mx-auto max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+								Nuestra plataforma de asesoramiento de viajes impulsada por
+								inteligencia artificial ofrece recomendaciones y consejos
+								personalizados para ayudarle a planificar el viaje de sus
+								sueños.
 							</p>
 						</div>
 						<div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 							<Card>
-								<CardHeader>
-									<img
-										src="/placeholder.svg"
-										width="400"
-										height="225"
-										alt="Travel Tip"
-										className="rounded-t-md object-cover"
-										style={{ aspectRatio: "400/225", objectFit: "cover" }}
-									/>
-								</CardHeader>
 								<CardContent>
 									<h3 className="text-lg font-bold">
-										Destination Recommendations
+										Recomendaciones de destinos
 									</h3>
 									<p className="text-muted-foreground">
-										Get personalized destination suggestions based on your
-										preferences and budget.
+										Obtenga sugerencias de destinos personalizadas según sus
+										preferencias y presupuesto.
 									</p>
 								</CardContent>
-								<CardFooter>
-									<Link
-										href="#"
-										className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-										prefetch={false}
-									>
-										Learn More
-									</Link>
-								</CardFooter>
 							</Card>
 							<Card>
-								<CardHeader>
-									<img
-										src="/placeholder.svg"
-										width="400"
-										height="225"
-										alt="Travel Tip"
-										className="rounded-t-md object-cover"
-										style={{ aspectRatio: "400/225", objectFit: "cover" }}
-									/>
-								</CardHeader>
-								<CardContent>
-									<h3 className="text-lg font-bold">Itinerary Planning</h3>
-									<p className="text-muted-foreground">
-										Let our AI create a detailed itinerary to make the most of
-										your trip.
-									</p>
-								</CardContent>
-								<CardFooter>
-									<Link
-										href="#"
-										className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-										prefetch={false}
-									>
-										Learn More
-									</Link>
-								</CardFooter>
-							</Card>
-							<Card>
-								<CardHeader>
-									<img
-										src="/placeholder.svg"
-										width="400"
-										height="225"
-										alt="Travel Tip"
-										className="rounded-t-md object-cover"
-										style={{ aspectRatio: "400/225", objectFit: "cover" }}
-									/>
-								</CardHeader>
-								<CardContent>
-									<h3 className="text-lg font-bold">Packing Recommendations</h3>
-									<p className="text-muted-foreground">
-										Get personalized packing lists to ensure you have everything
-										you need.
-									</p>
-								</CardContent>
-								<CardFooter>
-									<Link
-										href="#"
-										className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-										prefetch={false}
-									>
-										Learn More
-									</Link>
-								</CardFooter>
-							</Card>
-							<Card>
-								<CardHeader>
-									<img
-										src="/placeholder.svg"
-										width="400"
-										height="225"
-										alt="Travel Tip"
-										className="rounded-t-md object-cover"
-										style={{ aspectRatio: "400/225", objectFit: "cover" }}
-									/>
-								</CardHeader>
 								<CardContent>
 									<h3 className="text-lg font-bold">
-										Travel Tips and Insights
+										Planificación de itinerarios
 									</h3>
 									<p className="text-muted-foreground">
-										Discover expert tips and insider knowledge to make your trip
-										unforgettable.
+										Deje que nuestra IA cree un itinerario detallado para
+										aprovechar al máximo su viaje.
 									</p>
 								</CardContent>
-								<CardFooter>
-									<Link
-										href="#"
-										className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-										prefetch={false}
-									>
-										Learn More
-									</Link>
-								</CardFooter>
+							</Card>
+							<Card>
+								<CardContent>
+									<h3 className="text-lg font-bold">
+										Recomendaciones de embalaje
+									</h3>
+									<p className="text-muted-foreground">
+										Obtenga listas de embalaje personalizadas para asegurarse de
+										tener todo lo que necesita.
+									</p>
+								</CardContent>
+							</Card>
+							<Card>
+								<CardContent>
+									<h3 className="text-lg font-bold">
+										Consejos y consejos de viaje
+									</h3>
+									<p className="text-muted-foreground justify">
+										Descubra consejos de expertos y conocimientos de expertos
+										para que su viaje sea inolvidable.
+									</p>
+								</CardContent>
 							</Card>
 						</div>
 					</div>
@@ -338,7 +268,11 @@ export function Component() {
 			</main>
 			<footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
 				<p className="text-xs text-muted-foreground">
-					&copy; 2024 Travel Advice. All rights reserved.
+					&copy; 2024 Fitness Gym. Built with ❤️ by{" "}
+					<a href="https://github.com/jccm6" target="_blank">
+						jccm6
+					</a>
+					.
 				</p>
 				<nav className="sm:ml-auto flex gap-4 sm:gap-6">
 					<Link

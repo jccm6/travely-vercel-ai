@@ -2,12 +2,12 @@
 
 ## Descripción
 
-Este proyecto es una landing page desarrollada en NextJS 14 que genera rutinas de ejercicio personalizadas utilizando inteligencia artificial. La información del usuario es procesada para crear una rutina adaptada a sus necesidades y objetivos específicos.
+Travely es una aplicación diseñada para ayudar a los usuarios a descubrir destinos y actividades de viaje adaptados a sus preferencias y necesidades. Utilizando un modelo avanzado de inteligencia artificial, nuestro sistema ofrece recomendaciones personalizadas basadas en el presupuesto, la duración de la estancia, el destino elegido y las actividades deseadas.
 
 ### Demo en vivo
 
 Puedes probar en vivo la app en:
-<a href="https://vercelai.mydeploys.com" target="_blank">DEMO</a>
+<a href="https://travely.mydeploys.com" target="_blank">DEMO</a>
 
 ## Tecnologías Utilizadas
 
@@ -28,7 +28,7 @@ Puedes probar en vivo la app en:
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/jccm6/workout-vercel-ai
+   git clone https://github.com/jccm6/travely-vercel-ai
    cd tu-repositorio
    ```
 

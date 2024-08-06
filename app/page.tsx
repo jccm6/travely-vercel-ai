@@ -1,9 +1,9 @@
-import { Component } from "@/components/component";
+import { Travely } from "@/components/component";
 
 export default function mainPage() {
 	return (
 		<>
-			<Component />
+			<Travely />
 		</>
 	);
 }

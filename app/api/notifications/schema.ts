@@ -41,5 +41,5 @@ export const notificationSchema = z.object({
 		})
 	),
 
-	resumen: z.string().describe("Indica el resumen final del viaje"),
+	resumen: z.string().describe("Indica el resumen y consejos final del viaje"),
 });
