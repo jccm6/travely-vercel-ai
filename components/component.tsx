@@ -126,33 +126,37 @@ export function Travely() {
 								<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
 									<Input
 										type="number"
-										placeholder="Budget"
+										placeholder="Ingresa tu presupuesto en USD"
 										className="max-w-lg flex-1"
 										name="budget"
 										value={formData.budget}
 										onChange={handleChange}
+										min={1}
+										required
 									/>
 									<Input
 										type="text"
-										placeholder="Destination"
+										placeholder="Destino (Mientras más especifico, mejor)"
 										className="max-w-lg flex-1"
 										name="destination"
 										value={formData.destination}
 										onChange={handleChange}
+										required
 									/>
 								</div>
 								<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
 									<Input
 										type="text"
-										placeholder="Travel Time"
+										placeholder="Tiempo de viaje"
 										className="max-w-lg flex-1"
 										name="days"
 										value={formData.days}
 										onChange={handleChange}
+										required
 									/>
 									<Input
 										type="text"
-										placeholder="Accommodation"
+										placeholder="Tipo de Alojamiento"
 										className="max-w-lg flex-1"
 										name="accommodation"
 										value={formData.accommodation}
@@ -162,11 +166,12 @@ export function Travely() {
 								<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
 									<Input
 										type="text"
-										placeholder="Activities"
+										placeholder="Actividades que deseas realizar"
 										className="max-w-lg flex-1"
 										name="activities"
 										value={formData.activities}
 										onChange={handleChange}
+										required
 									/>
 									<Input
 										type="text"
